@@ -30,7 +30,7 @@ document.addEventListener('DOMContentLoaded', function() {
     L.marker([43.12773368916784, -77.62914434363684]).addTo(workMap)
         .bindPopup('CSC280--Student')
         .openPopup();
-    L.marker([43.12867781766397, -77.63012965280903]).addTo(workMap)
+    L.marker([43.128455791762335, -77.62891817250541]).addTo(workMap)
         .bindPopup('STAT213--Teaching Assistant')
         .openPopup();
 });

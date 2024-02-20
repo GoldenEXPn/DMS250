@@ -125,5 +125,11 @@ p{
 }
 
 #workMap {
+    margin-top: 10px;
+    margin:auto;
     height: 400px;
+}
+
+p{
+    font-family: cursive;
 }
