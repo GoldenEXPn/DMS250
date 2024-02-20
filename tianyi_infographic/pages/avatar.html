@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Subpage 1</title>
     <link rel="stylesheet" href="../css/style.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 </head>
 <body>
     <header>
@@ -28,12 +29,9 @@
 
         <li>
             <div class="content-block">
-                <img src="../images/2023spending.png" alt="tianyi's bank statement, 2023"/>
+                <div class="chart-container" style="position: relative; height:40vh; width:80vw"><canvas id="screenTimeChart"></canvas></div>
                  <p>
-                    This is my spending summary organized by category. Through this stacked bar chat, information about how
-                    a 21-year-old junior student studied at the University of Rochester spent time within one year of his 
-                    college life can be observed. His interest in purchasing automotive and mechanical (personal) related 
-                    stuff can be easily illustrated.
+                    This is my screen time chart from Feb. 12 to Feb. 19.
                 </p>
             </div>
         </li>
@@ -46,5 +44,7 @@
         <p>© 2024 Tianyi Zhou</p>
     </footer>
     <script src="../js/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.0.0/papaparse.min.js"></script>
+    
 </body>
 </html>
