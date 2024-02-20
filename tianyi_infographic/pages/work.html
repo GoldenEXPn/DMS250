@@ -3,25 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Subpage 1</title>
+    <title>Work Page</title>
     <link rel="stylesheet" href="../css/style.css">
+    
+    <!--Additional package-->
+    <script src="https://cdn.jsdelivr.net/npm/papaparse@5.0.0/papaparse.min.js"></script>
+    <!--Leaflet CSS-->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"
+     integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY="
+     crossorigin=""/>
+     
 </head>
 <body>
     <header>
-        <h1>Subpage 1</h1>
+        <h1>Work Page</h1>
     </header>
-    <nav>
-        <ul>
-            <li><a href="../index.html">Back to Main Page</a></li>
-            <li><img src="../images/ta.jpg" alt="tianyi's office hour" /></li>
-        </ul>
-    </nav>
-    <section>
-        <p>Content for Subpage 1...</p>
-    </section>
+    <nav><a href="../index.html">Back to Main Page</a></nav>
+
+
+    <ul>  
+        <li>
+            <div class="content-block">
+                <img src="../images/ta.jpg" alt="Being a TA" />
+                <p>
+                    Attached is my selfie taken during my office hour for Stats 213. This is my second term working as a teaching assistant for this class, 
+                    and I've been enjoying sharing our knowledge and communicating with students. I've been engaged with many conversations, both online and 
+                    in person, and my job shaped me to a better communicator (still not a good communicator to my standard). I believe teaching should use various 
+                    methods for “knowledge transfer”: examples and analogies, proof using different methods if necessary, and proper practices for reinforcing the idea. 
+                    I'm still exploring a better way to deliver and shape my knowledge to fit into others' mindset.
+                    (Attached is my daily go-to places)
+                </p>
+            </div>
+        </li>
+        
+
+        <div id="workMap"></div>
+    </ul>
+
+
     <footer>
         <p>© 2024 Tianyi Zhou</p>
     </footer>
     <script src="../js/script.js"></script>
 </body>
 </html>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"
+     integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo="
+     crossorigin=""></script>

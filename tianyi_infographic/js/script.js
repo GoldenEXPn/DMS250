@@ -1,8 +1,44 @@
 document.addEventListener('DOMContentLoaded', (event) => {
     console.log('DOM fully loaded and parsed');
-    // Add your JavaScript code here
 });
 
+
+
+
+// For creating interactive map
+document.addEventListener('DOMContentLoaded', function() {
+    // Initialize the map on the "workMap" div with a given center and zoom level
+    var workMap = L.map('workMap').setView([43.128455791762335, -77.62891817250541], 13);
+
+    // Add a tile layer to add to our map, in this case, OpenStreetMap's Standard tile layer
+    var osm = L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    });
+    osm.addTo(workMap);
+
+    // Add markers for a given location
+    L.marker([43.12853910546242, -77.63097405396769]).addTo(workMap) // Replace with your coordinates
+        .bindPopup('DMST250--Student') // Replace with your content
+        .openPopup();
+    L.marker([43.12867781766397, -77.63012965280903]).addTo(workMap)
+        .bindPopup('DMS200W--Student')
+        .openPopup();
+    L.marker([43.12673719039349, -77.62894552519072]).addTo(workMap)
+        .bindPopup('MATH164--Student')
+        .openPopup();
+    L.marker([43.12773368916784, -77.62914434363684]).addTo(workMap)
+        .bindPopup('CSC280--Student')
+        .openPopup();
+    L.marker([43.12867781766397, -77.63012965280903]).addTo(workMap)
+        .bindPopup('STAT213--Teaching Assistant')
+        .openPopup();
+});
+
+
+
+
+// For plotting screen time line chart
 document.addEventListener('DOMContentLoaded', function() {
     fetch('../screen_time.csv')
         .then(response => response.text())
@@ -55,3 +91,7 @@ function getRandomColor() {
     }
     return color;
 }
+
+
+
+ 

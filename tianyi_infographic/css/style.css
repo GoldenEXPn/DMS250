@@ -99,27 +99,31 @@ figure {
     display: flex;
     align-items: center; /* Aligns items vertically in the center */
     justify-content: space-between; /* Puts maximum space between flex items */
-  }
+}
   
-  .content-block img, .content-block p {
+.content-block img, .content-block p {
     max-width: 50%;
     flex: 1; /* Gives img and p an equal flex basis */
     margin-right: 10px; /* Add space between the img and the paragraph */
-  }
+}
   
-  .content-block p {
+.content-block p {
     font-size: 20pt;
     margin-left: 10px; /* Add space between the paragraph and the img */
-  }
+}
 
-  p{
+p{
     text-align: left;
     padding: 0 20px; /* This applies 20px padding to both left and right sides */
     margin: auto; /* This will work if the <p> is a block element */
     max-width: 800px; /* Adjust the max-width as needed for your design */
-  }
+}
 
-  .chart-container {
+.chart-container {
     max-width: 800px; /* Your desired maximum width */
     margin: auto; /* This will center the chart if the container is less than 100% width */
-  }
+}
+
+#workMap {
+    height: 400px;
+}
